@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_staggered_animations/flutter_staggered_animations.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:whatches_store/modul/modul.dart';
 import 'package:whatches_store/page/PrudectsPage/itemCardDesign.dart';
 
 class ItemsCard extends StatefulWidget {
@@ -78,8 +79,8 @@ class _ItemsCardState extends State<ItemsCard> {
                               Text(
                                 "\$${widget.whatchesInfo[index]["Price"]}",
                                 style: GoogleFonts.lato(
-                                    textStyle: const TextStyle(
-                                        color: Colors.orangeAccent,
+                                    textStyle:  TextStyle(
+                                        color: colorOrange,
                                         fontSize: 21)),
                               ),
                             ],

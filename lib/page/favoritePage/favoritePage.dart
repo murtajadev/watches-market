@@ -41,72 +41,70 @@ class _FavoritePageState extends State<FavoritePage> {
   Widget build(BuildContext context) {
     final h = MediaQuery.of(context).size.height;
     final w = MediaQuery.of(context).size.width;
-    return SafeArea(
-      child: Scaffold(
-        appBar: AppBar(
-          backgroundColor: const Color(0x42525050),
-          leading: IconButton(
-            onPressed: () {
-              Navigator.of(context).pop();
-            },
-            icon: const Icon(
-              Icons.arrow_back_rounded,
-              color: Colors.white,
-            ),
+    return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.black,
+        leading: IconButton(
+          onPressed: () {
+            Navigator.of(context).pop();
+          },
+          icon: const Icon(
+            Icons.arrow_back_rounded,
+            color: Colors.white,
           ),
-          actions: [
-            Text(
-              "The Favorites",
-              style: GoogleFonts.lobster(
-                textStyle: TextStyle(
-                  fontSize: 25,
-                  fontWeight: FontWeight.w400,
-                  color: Colors.white.withOpacity(0.99),
-                ),
+        ),
+        actions: [
+          Text(
+            "The Favorites",
+            style: GoogleFonts.lobster(
+              textStyle: TextStyle(
+                fontSize: 25,
+                fontWeight: FontWeight.w400,
+                color: Colors.white.withOpacity(0.99),
               ),
             ),
-            SizedBox(
-              width: w / 3,
-            )
-          ],
-        ),
-        backgroundColor: const Color(0x42525050),
-        body: Padding(
-          padding: const EdgeInsets.all(10),
-          child: _itemsFavoriteIsNotfound
-              ? Center(
-                  child: Text(
-                    "You don't have any items to display",
-                    textAlign: TextAlign.center,
-                    style: GoogleFonts.lato(color: Colors.white, fontSize: 30),
-                  ),
-                )
-              : SizedBox(
-                  child: AnimationLimiter(
-                    child: ListView.separated(
-                      separatorBuilder: (context, index) => SizedBox(
-                        height: h / 70,
-                      ),
-                      itemCount: listFavoriteItems.length,
-                      scrollDirection: Axis.vertical,
-                      itemBuilder: (BuildContext context, int index) {
-                        return AnimationConfiguration.staggeredList(
-                          position: index,
-                          duration: const Duration(milliseconds: 800),
-                          child: SlideAnimation(
-                            verticalOffset: 50.0,
-                            child: FadeInAnimation(
-                                child: FavoriteCard(
-                              itemInfo: listFavoriteItems[index],
-                              tagPicture: index,
-                            )),
-                          ),
-                        );
-                      },
+          ),
+          SizedBox(
+            width: w / 3,
+          )
+        ],
+      ),
+      backgroundColor: const Color(0x42525050),
+      body: Padding(
+        padding: const EdgeInsets.all(10),
+        child: _itemsFavoriteIsNotfound
+            ? Center(
+                child: Text(
+                  "You don't have any items to display",
+                  textAlign: TextAlign.center,
+                  style: GoogleFonts.lato(color: Colors.white, fontSize: 30),
+                ),
+              )
+            : SizedBox(
+                child: AnimationLimiter(
+                  child: ListView.separated(
+                    separatorBuilder: (context, index) => SizedBox(
+                      height: h / 70,
                     ),
+                    itemCount: listFavoriteItems.length,
+                    scrollDirection: Axis.vertical,
+                    itemBuilder: (BuildContext context, int index) {
+                      return AnimationConfiguration.staggeredList(
+                        position: index,
+                        duration: const Duration(milliseconds: 800),
+                        child: SlideAnimation(
+                          verticalOffset: 50.0,
+                          child: FadeInAnimation(
+                              child: FavoriteCard(
+                            itemInfo: listFavoriteItems[index],
+                            tagPicture: index,
+                          )),
+                        ),
+                      );
+                    },
                   ),
                 ),
-        ),
+              ),
       ),
     );
   }

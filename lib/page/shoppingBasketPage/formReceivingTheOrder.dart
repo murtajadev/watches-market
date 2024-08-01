@@ -78,7 +78,7 @@ class _FormReceivingTheOrderState extends State<FormReceivingTheOrder> {
                   suffixIconColor: Colors.amber,
                   hintStyle: const TextStyle(color: Colors.white),
                   focusedBorder: OutlineInputBorder(
-                      borderSide: const BorderSide(color: Colors.orange),
+                      borderSide:  BorderSide(color: colorOrange),
                       borderRadius: BorderRadius.circular(18)),
                   enabledBorder: const OutlineInputBorder(
                       borderSide: BorderSide(color: Colors.white)),
@@ -100,7 +100,7 @@ class _FormReceivingTheOrderState extends State<FormReceivingTheOrder> {
                   suffixIconColor: Colors.amber,
                   hintStyle: const TextStyle(color: Colors.white),
                   focusedBorder: OutlineInputBorder(
-                      borderSide: const BorderSide(color: Colors.orange),
+                      borderSide:  BorderSide(color: colorOrange),
                       borderRadius: BorderRadius.circular(18)),
                   enabledBorder: const OutlineInputBorder(
                       borderSide: BorderSide(color: Colors.white)),
@@ -129,7 +129,7 @@ class _FormReceivingTheOrderState extends State<FormReceivingTheOrder> {
                   suffixIconColor: Colors.amber,
                   hintStyle: const TextStyle(color: Colors.white),
                   focusedBorder: OutlineInputBorder(
-                      borderSide: const BorderSide(color: Colors.orange),
+                      borderSide:  BorderSide(color: colorOrange),
                       borderRadius: BorderRadius.circular(18)),
                   enabledBorder: const OutlineInputBorder(
                       borderSide: BorderSide(color: Colors.white)),
@@ -157,7 +157,7 @@ class _FormReceivingTheOrderState extends State<FormReceivingTheOrder> {
                   suffixIconColor: Colors.amber,
                   hintStyle: const TextStyle(color: Colors.white),
                   focusedBorder: OutlineInputBorder(
-                      borderSide: const BorderSide(color: Colors.orange),
+                      borderSide:  BorderSide(color: colorOrange),
                       borderRadius: BorderRadius.circular(18)),
                   enabledBorder: const OutlineInputBorder(
                       borderSide: BorderSide(color: Colors.white)),
@@ -179,7 +179,7 @@ class _FormReceivingTheOrderState extends State<FormReceivingTheOrder> {
                   suffixIconColor: Colors.amber,
                   hintStyle: const TextStyle(color: Colors.white),
                   focusedBorder: OutlineInputBorder(
-                      borderSide: const BorderSide(color: Colors.orange),
+                      borderSide:  BorderSide(color: colorOrange),
                       borderRadius: BorderRadius.circular(18)),
                   enabledBorder: const OutlineInputBorder(
                       borderSide: BorderSide(color: Colors.white)),

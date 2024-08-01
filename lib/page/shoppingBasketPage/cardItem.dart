@@ -60,7 +60,7 @@ class _CardItemState extends State<CardItem> {
                   children: [
                     Text(
                       widget.infoItem["item"]["name"],
-                      style: TextStyle(color: Colors.orange, fontSize: w / 20),
+                      style: TextStyle(color: colorOrange, fontSize: w / 20),
                     ),
                   ],
                 ),
@@ -72,11 +72,11 @@ class _CardItemState extends State<CardItem> {
                   children: [
                     Text(
                       "Items Price : ",
-                      style: TextStyle(color: Colors.orange, fontSize: w / 20),
+                      style: TextStyle(color: colorOrange, fontSize: w / 20),
                     ),
                     Text(
                       "${totalPrice?.toStringAsFixed(2)}",
-                      style: TextStyle(color: Colors.orange, fontSize: w / 20),
+                      style: TextStyle(color: colorOrange, fontSize: w / 20),
                     ),
                   ],
                 ),

@@ -6,7 +6,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:hive/hive.dart';
 import 'package:rive/rive.dart';
 import 'package:whatches_store/modul/modul.dart';
-import 'package:whatches_store/page/HomePage/homePage.dart';
+import 'package:whatches_store/page/HomePage/bottonNavigationBar.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -18,7 +18,8 @@ class SplashScreen extends StatefulWidget {
 class _SplashScreenState extends State<SplashScreen> {
   Route _createRoute() {
     return PageRouteBuilder(
-      pageBuilder: (context, animation, secondaryAnimation) => const HomePage(),
+      pageBuilder: (context, animation, secondaryAnimation) =>
+          const BottonNavigationBar(),
       transitionsBuilder: (context, animation, secondaryAnimation, child) {
         const begin = Offset(0.0, 1.0);
         const end = Offset.zero;
@@ -60,7 +61,6 @@ class _SplashScreenState extends State<SplashScreen> {
             return Scaffold(
               body: Stack(
                 children: [
-                  
                   const RiveAnimation.asset(
                     'asset/splash.riv',
                     fit: BoxFit.fill,
@@ -95,8 +95,7 @@ class _SplashScreenState extends State<SplashScreen> {
                       maxLines: 40,
                       style: GoogleFonts.oswald(
                         textStyle: TextStyle(
-                            fontSize: 20,
-                            color: Colors.white.withOpacity(0.8)),
+                            fontSize: 20, color: Colors.white.withOpacity(0.8)),
                       ),
                     ),
                   ),
@@ -109,9 +108,9 @@ class _SplashScreenState extends State<SplashScreen> {
                       },
                       dismissible: false,
                       radius: 35,
-                      highlightedColor: Colors.orange.shade300,
+                      highlightedColor: colorOrange,
                       backgroundColor: Colors.white.withOpacity(0.2),
-                      buttonColor: Colors.orange.withOpacity(0.6),
+                      buttonColor: colorOrange.withOpacity(0.6),
                       label: Text(
                         "Lets Shoping",
                         style: GoogleFonts.sriracha(

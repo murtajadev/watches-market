@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:whatches_store/modul/modul.dart';
 import 'package:whatches_store/page/PrudectsPage/prudectsCompany.dart';
 
 class CatalogCard extends StatefulWidget {
@@ -44,7 +45,7 @@ class _CatalogCardState extends State<CatalogCard> {
           borderRadius: BorderRadius.circular(15),
           color: changeColor
               ? colorBackGroung
-              : Colors.orangeAccent.withOpacity(0.6),
+              : colorOrange.withOpacity(0.6),
         ),
         duration: const Duration(milliseconds: 100),
         curve: Curves.linear,

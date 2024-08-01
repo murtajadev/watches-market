@@ -1,5 +1,7 @@
 import 'dart:math';
 
+import 'package:flutter/material.dart';
+
 List whatchesInformation = [
   {
     "Company": "Casio",
@@ -156,3 +158,5 @@ List infoItemsSuggest() {
 
 List favoriteItems = [];
 List basketItems = [];
+Color colorOrange = const Color(0xFFf57d1f);
+Color colorBackGround = const Color(0xFF494b57);

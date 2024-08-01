@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:whatches_store/modul/modul.dart';
 
 class RatingPage extends StatefulWidget {
   const RatingPage({super.key});
@@ -74,7 +75,7 @@ class _RatingPageState extends State<RatingPage> {
           ElevatedButton(
               onPressed: () {},
               style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.orange,
+                  backgroundColor: colorOrange,
                   padding:
                       const EdgeInsets.symmetric(vertical: 10, horizontal: 40)),
               child: Center(

@@ -29,7 +29,7 @@ class _ShoppingBasketPageState extends State<ShoppingBasketPage> {
 
   void CalculatorTotalPrice() {
     setState(() {
-      totalPrice = 0; // إعادة تعيين السعر الكلي إلى 0
+      totalPrice = 0;
       for (int i = 0; i < basketItems.length; i++) {
         totalPrice +=
             (basketItems[i]["number"] * basketItems[i]["item"]["Price"]);
@@ -201,7 +201,7 @@ class _ShoppingBasketPageState extends State<ShoppingBasketPage> {
                               child: Text(
                                 "Order Now",
                                 style: GoogleFonts.oswald(
-                                    color: Colors.orange, fontSize: w / 20),
+                                    color: colorOrange, fontSize: w / 20),
                               ),
                             ),
                     ),

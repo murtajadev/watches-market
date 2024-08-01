@@ -131,7 +131,7 @@ class _ItemCardDesignState extends State<ItemCardDesign> {
                   icon: Icon(
                     _isFavoriteItem ? Icons.bookmark : Icons.bookmark_border,
                     size: 35,
-                    color: _isFavoriteItem ? Colors.orange : Colors.white,
+                    color: _isFavoriteItem ? colorOrange : Colors.white,
                   ),
                 ),
               ],
@@ -153,12 +153,12 @@ class _ItemCardDesignState extends State<ItemCardDesign> {
                 Text(
                   "Price : ",
                   style: GoogleFonts.oswald(
-                      color: Colors.orange, fontSize: w / 17),
+                      color: colorOrange, fontSize: w / 17),
                 ),
                 Text(
                   "\$${widget.itemInfo["Price"]}  ",
                   style: GoogleFonts.oswald(
-                      color: Colors.orange, fontSize: w / 17),
+                      color: colorOrange, fontSize: w / 17),
                 ),
               ],
             ),
@@ -173,7 +173,7 @@ class _ItemCardDesignState extends State<ItemCardDesign> {
                   Text(
                     " The Number of Item : ",
                     style: GoogleFonts.oswald(
-                        color: Colors.orange, fontSize: w / 17),
+                        color: colorOrange, fontSize: w / 17),
                   ),
                   IconButton(
                       onPressed: () {

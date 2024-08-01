@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:whatches_store/modul/modul.dart';
 import 'package:whatches_store/page/PrudectsPage/itemCardDesign.dart';
 
 class FavoriteCard extends StatefulWidget {
@@ -56,7 +57,7 @@ class _FavoriteCardState extends State<FavoriteCard> {
                 Text(
                   "\$ ${widget.itemInfo["Price"]}",
                   style: GoogleFonts.oswald(
-                      color: Colors.orange, fontSize: _w / 18),
+                      color: colorOrange, fontSize: _w / 18),
                 ),
               ],
             ),
