@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:whatches_store/page/DrawingMenu/onPressCard.dart';
-import 'package:whatches_store/page/DrawingMenu/ratingPage.dart';
+import 'package:whatches_store/page/DrawingMenu/rating_page.dart';
 
 class DrawingMenuPage extends StatefulWidget {
   const DrawingMenuPage({super.key});

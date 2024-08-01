@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:lottie/lottie.dart';
 import 'package:whatches_store/modul/modul.dart';
-import 'package:whatches_store/page/HomePage/homePage.dart';
+import 'package:whatches_store/page/HomePage/home_page.dart';
 
 class FormReceivingTheOrder extends StatefulWidget {
   const FormReceivingTheOrder({super.key});

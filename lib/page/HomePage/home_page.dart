@@ -1,11 +1,10 @@
-// ignore: file_names
 import 'package:flutter/material.dart';
 import 'package:flutter_advanced_drawer/flutter_advanced_drawer.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:whatches_store/page/DrawingMenu/drawingMenuPage.dart';
-import 'package:whatches_store/page/HomePage/catalogsWidget/catalogCompanys.dart';
+import 'package:whatches_store/page/HomePage/catalogsWidget/catalog_companys.dart';
 import 'package:whatches_store/page/HomePage/suggestItems/suggestsCard.dart';
-import 'package:whatches_store/page/favoritePage/favoritePage.dart';
+import 'package:whatches_store/page/favoritePage/favorite_page.dart';
 import 'package:whatches_store/page/shoppingBasketPage/shoppingBasketPage.dart';
 
 class HomePage extends StatefulWidget {

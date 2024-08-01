@@ -1,5 +1,3 @@
-// ignore_for_file: unused_local_variable
-
 import 'package:flutter/material.dart';
 import 'package:flutter_staggered_animations/flutter_staggered_animations.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -25,6 +23,7 @@ class _FavoritePageState extends State<FavoritePage> {
   }
 
   Future<void> _openBoxAndLoadData() async {
+    // ignore: unused_local_variable
     Box box = await Hive.openBox("ListFavoriteItems");
     final listFavoriteItemsHive = Hive.box("ListFavoriteItems");
 

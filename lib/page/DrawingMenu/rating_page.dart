@@ -16,7 +16,7 @@ class _RatingPageState extends State<RatingPage> {
 
   @override
   Widget build(BuildContext context) {
-    final _h = MediaQuery.of(context).size.height;
+    final h = MediaQuery.of(context).size.height;
     return Form(
       child: Column(
         mainAxisAlignment: MainAxisAlignment.start,
@@ -43,10 +43,10 @@ class _RatingPageState extends State<RatingPage> {
             },
           ),
           SizedBox(
-            height: _h / 40,
+            height: h / 40,
           ),
           SizedBox(
-            height: _h / 25,
+            height: h / 25,
           ),
           Row(
             mainAxisAlignment: MainAxisAlignment.start,
@@ -56,7 +56,7 @@ class _RatingPageState extends State<RatingPage> {
             ],
           ),
           SizedBox(
-            height: _h / 40,
+            height: h / 40,
           ),
           TextFormField(
             controller: commentUser,
@@ -67,10 +67,10 @@ class _RatingPageState extends State<RatingPage> {
                 border: const OutlineInputBorder(
                     borderRadius: BorderRadius.all(Radius.circular(10))),
                 hintText: "Write your Comment",
-                hintStyle: TextStyle(color: Colors.white, fontSize: _h / 55)),
+                hintStyle: TextStyle(color: Colors.white, fontSize: h / 55)),
           ),
           SizedBox(
-            height: _h / 10,
+            height: h / 10,
           ),
           ElevatedButton(
               onPressed: () {},
@@ -82,7 +82,7 @@ class _RatingPageState extends State<RatingPage> {
                 child: Text(
                   "Send the Rating",
                   style:
-                      GoogleFonts.lato(color: Colors.white, fontSize: _h / 40),
+                      GoogleFonts.lato(color: Colors.white, fontSize: h / 40),
                 ),
               ))
         ],

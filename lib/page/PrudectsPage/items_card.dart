@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_staggered_animations/flutter_staggered_animations.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:whatches_store/modul/modul.dart';
-import 'package:whatches_store/page/PrudectsPage/itemCardDesign.dart';
+import 'package:whatches_store/page/PrudectsPage/item_card_design.dart';
 
 class ItemsCard extends StatefulWidget {
   const ItemsCard({super.key, required this.whatchesInfo});

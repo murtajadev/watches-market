@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:whatches_store/page/HomePage/catalogsWidget/catalogCard.dart';
+import 'package:whatches_store/page/HomePage/catalogsWidget/catalog_card.dart';
 import 'package:whatches_store/modul/modul.dart';
 
 class CatalogCompanys extends StatefulWidget {

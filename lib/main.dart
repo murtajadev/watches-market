@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hive_flutter/adapters.dart';
-import 'package:whatches_store/page/Splash_Screen.dart';
+import 'package:whatches_store/page/splash_screen.dart';
 
 void main() async {
   await Hive.initFlutter();

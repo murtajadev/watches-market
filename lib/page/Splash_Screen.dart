@@ -6,7 +6,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:hive/hive.dart';
 import 'package:rive/rive.dart';
 import 'package:whatches_store/modul/modul.dart';
-import 'package:whatches_store/page/HomePage/bottonNavigationBar.dart';
+import 'package:whatches_store/page/HomePage/botton_navigation_bar.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -131,7 +131,7 @@ class _SplashScreenState extends State<SplashScreen> {
             );
           }
         } else {
-          return Center(child: CircularProgressIndicator());
+          return const Center(child: CircularProgressIndicator());
         }
       },
     );

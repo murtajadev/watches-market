@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:whatches_store/modul/modul.dart';
-import 'package:whatches_store/page/PrudectsPage/itemCardDesign.dart';
+import 'package:whatches_store/page/PrudectsPage/item_card_design.dart';
 
 class CardItem extends StatefulWidget {
   const CardItem(

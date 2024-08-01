@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:whatches_store/modul/modul.dart';
-import 'package:whatches_store/page/PrudectsPage/prudectsCompany.dart';
+import 'package:whatches_store/page/PrudectsPage/prudects_company.dart';
 
 class CatalogCard extends StatefulWidget {
   const CatalogCard(

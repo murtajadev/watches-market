@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:whatches_store/page/PrudectsPage/itemCardDesign.dart';
+import 'package:whatches_store/page/PrudectsPage/item_card_design.dart';
 import 'package:whatches_store/modul/modul.dart';
 
 // ignore: must_be_immutable

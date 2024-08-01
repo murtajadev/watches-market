@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:whatches_store/page/PrudectsPage/ItemsCard.dart';
+import 'package:whatches_store/page/PrudectsPage/items_card.dart';
 
 class PrudectsCompany extends StatefulWidget {
   const PrudectsCompany(

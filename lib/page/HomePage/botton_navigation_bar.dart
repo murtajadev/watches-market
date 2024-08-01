@@ -3,8 +3,8 @@ import 'package:flashy_tab_bar2/flashy_tab_bar2.dart';
 
 import 'package:flutter/material.dart';
 import 'package:whatches_store/modul/modul.dart';
-import 'package:whatches_store/page/HomePage/homePage.dart';
-import 'package:whatches_store/page/favoritePage/favoritePage.dart';
+import 'package:whatches_store/page/HomePage/home_page.dart';
+import 'package:whatches_store/page/favoritePage/favorite_page.dart';
 import 'package:whatches_store/page/shoppingBasketPage/shoppingBasketPage.dart';
 
 class BottonNavigationBar extends StatefulWidget {
