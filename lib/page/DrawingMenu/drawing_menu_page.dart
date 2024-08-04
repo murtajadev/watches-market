@@ -1,3 +1,4 @@
+import 'package:boxicons/boxicons.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:whatches_store/page/DrawingMenu/onPressCard.dart';
@@ -34,7 +35,7 @@ class _DrawingMenuPageState extends State<DrawingMenuPage> {
                 color: _colorCard,
                 borderRadius: BorderRadius.circular(15),
                 image: const DecorationImage(
-                  image: AssetImage("asset/logo_watch.png"),
+                  image: AssetImage("asset/images/logo_watch.png"),
                 ),
               ),
             ),
@@ -76,7 +77,7 @@ class _DrawingMenuPageState extends State<DrawingMenuPage> {
                             fontSize: _h / 50, color: Colors.white),
                       ),
                       SelectableText(
-                        "Murtagarider9@gmail.com",
+                        "Murtajadhaidan@gmail.com",
                         style: GoogleFonts.lato(
                             fontSize: _h / 50, color: Colors.white),
                       ),
@@ -110,23 +111,28 @@ class _DrawingMenuPageState extends State<DrawingMenuPage> {
                   SizedBox(
                     height: _h / 30,
                   ),
-                  const Icon(
-                   Icons.square,
-                    color: Colors.white,
-                  ),
                   const SizedBox(
                     width: 10,
                   ),
-                  Text(
-                    "Inatagram :  ",
-                    style: GoogleFonts.lato(
-                        fontSize: _h / 50, color: Colors.white),
-                  ),
-                  SelectableText(
-                    "z_1b",
-                    style: GoogleFonts.lato(
-                        fontSize: _h / 50, color: Colors.white),
-                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    children: [
+                      const Icon(
+                        Boxicons.bxl_instagram,
+                        color: Colors.white,
+                      ),
+                      Text(
+                        " Inatagram :  ",
+                        style: GoogleFonts.lato(
+                            fontSize: _h / 50, color: Colors.white),
+                      ),
+                      SelectableText(
+                        "z_1b",
+                        style: GoogleFonts.lato(
+                            fontSize: _h / 50, color: Colors.white),
+                      ),
+                    ],
+                  )
                 ],
               ),
             ),

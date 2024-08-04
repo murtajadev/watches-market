@@ -1,8 +1,6 @@
 import 'package:boxicons/boxicons.dart';
-import 'package:flashy_tab_bar2/flashy_tab_bar2.dart';
-
+import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
-import 'package:whatches_store/modul/modul.dart';
 import 'package:whatches_store/page/HomePage/home_page.dart';
 import 'package:whatches_store/page/favoritePage/favorite_page.dart';
 import 'package:whatches_store/page/shoppingBasketPage/shoppingBasketPage.dart';
@@ -21,7 +19,6 @@ class _BottonNavigationBarState extends State<BottonNavigationBar> {
     const FavoritePage(),
   ];
   int _selectPage = 0;
-  final PageController controller = PageController();
 
   @override
   void dispose() {
@@ -30,38 +27,40 @@ class _BottonNavigationBarState extends State<BottonNavigationBar> {
 
   @override
   Widget build(BuildContext context) {
+    final h = MediaQuery.of(context).size.height;
+    final w = MediaQuery.of(context).size.width;
     return Scaffold(
       backgroundColor: Colors.black,
-      bottomNavigationBar: FlashyTabBar(
-        animationCurve: Curves.linearToEaseOut,
-        showElevation: false,
-        animationDuration: const Duration(milliseconds: 600),
-        selectedIndex: _selectPage,
-        backgroundColor: colorOrange,
-        height: 55,
+      bottomNavigationBar: CurvedNavigationBar(
+        index: _selectPage,
+        animationCurve: Curves.ease,
+        animationDuration: const Duration(milliseconds: 500),
+        backgroundColor: Colors.orange,
+        height: h / 15,
+        buttonBackgroundColor: Colors.white,
+        color: Colors.black,
         items: [
-          FlashyTabBarItem(
-              icon: const Icon(Icons.home),
-              title: const Text('Home'),
-              activeColor: Colors.white,
-              inactiveColor: Colors.black),
-          FlashyTabBarItem(
-              icon: const Icon(Boxicons.bx_basket),
-              title: const Text('Basket'),
-              activeColor: Colors.white,
-              inactiveColor: Colors.black),
-          FlashyTabBarItem(
-              icon: const Icon(Boxicons.bx_save),
-              title: const Text('Favorite'),
-              activeColor: Colors.white,
-              inactiveColor: Colors.black),
+          Icon(
+            Boxicons.bx_home,
+            size: w / 19,
+            color: Colors.orange,
+          ),
+          Icon(
+            Boxicons.bx_basket,
+            size: w / 20,
+            color: Colors.orange,
+          ),
+          Icon(
+            Boxicons.bxs_save,
+            size: w / 20,
+            color: Colors.orange,
+          ),
         ],
-        onItemSelected: (index) {
+        onTap: (value) {
           setState(() {
-            _selectPage = index;
+            _selectPage = value;
           });
         },
-        iconSize: 30,
       ),
       body: Pages.elementAt(_selectPage),
     );

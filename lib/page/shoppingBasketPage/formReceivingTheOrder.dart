@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:lottie/lottie.dart';
 import 'package:whatches_store/modul/modul.dart';
+import 'package:whatches_store/page/HomePage/botton_navigation_bar.dart';
 import 'package:whatches_store/page/HomePage/home_page.dart';
 
 class FormReceivingTheOrder extends StatefulWidget {
@@ -42,7 +43,7 @@ class _FormReceivingTheOrderState extends State<FormReceivingTheOrder> {
       Future.delayed(
         const Duration(seconds: 4),
         () => Navigator.of(context).push(MaterialPageRoute(
-          builder: (context) => const HomePage(),
+          builder: (context) =>const  BottonNavigationBar(),
         )),
       );
       basketItems = [];
@@ -78,7 +79,7 @@ class _FormReceivingTheOrderState extends State<FormReceivingTheOrder> {
                   suffixIconColor: Colors.amber,
                   hintStyle: const TextStyle(color: Colors.white),
                   focusedBorder: OutlineInputBorder(
-                      borderSide:  BorderSide(color: colorOrange),
+                      borderSide: BorderSide(color: colorOrange),
                       borderRadius: BorderRadius.circular(18)),
                   enabledBorder: const OutlineInputBorder(
                       borderSide: BorderSide(color: Colors.white)),
@@ -100,7 +101,7 @@ class _FormReceivingTheOrderState extends State<FormReceivingTheOrder> {
                   suffixIconColor: Colors.amber,
                   hintStyle: const TextStyle(color: Colors.white),
                   focusedBorder: OutlineInputBorder(
-                      borderSide:  BorderSide(color: colorOrange),
+                      borderSide: BorderSide(color: colorOrange),
                       borderRadius: BorderRadius.circular(18)),
                   enabledBorder: const OutlineInputBorder(
                       borderSide: BorderSide(color: Colors.white)),
@@ -129,7 +130,7 @@ class _FormReceivingTheOrderState extends State<FormReceivingTheOrder> {
                   suffixIconColor: Colors.amber,
                   hintStyle: const TextStyle(color: Colors.white),
                   focusedBorder: OutlineInputBorder(
-                      borderSide:  BorderSide(color: colorOrange),
+                      borderSide: BorderSide(color: colorOrange),
                       borderRadius: BorderRadius.circular(18)),
                   enabledBorder: const OutlineInputBorder(
                       borderSide: BorderSide(color: Colors.white)),
@@ -157,7 +158,7 @@ class _FormReceivingTheOrderState extends State<FormReceivingTheOrder> {
                   suffixIconColor: Colors.amber,
                   hintStyle: const TextStyle(color: Colors.white),
                   focusedBorder: OutlineInputBorder(
-                      borderSide:  BorderSide(color: colorOrange),
+                      borderSide: BorderSide(color: colorOrange),
                       borderRadius: BorderRadius.circular(18)),
                   enabledBorder: const OutlineInputBorder(
                       borderSide: BorderSide(color: Colors.white)),
@@ -179,7 +180,7 @@ class _FormReceivingTheOrderState extends State<FormReceivingTheOrder> {
                   suffixIconColor: Colors.amber,
                   hintStyle: const TextStyle(color: Colors.white),
                   focusedBorder: OutlineInputBorder(
-                      borderSide:  BorderSide(color: colorOrange),
+                      borderSide: BorderSide(color: colorOrange),
                       borderRadius: BorderRadius.circular(18)),
                   enabledBorder: const OutlineInputBorder(
                       borderSide: BorderSide(color: Colors.white)),
@@ -201,22 +202,12 @@ class _FormReceivingTheOrderState extends State<FormReceivingTheOrder> {
                           backgroundColor:
                               const Color.fromARGB(255, 52, 52, 52),
                           title: Text(
-                            "هل انتَ متأكد من طَلَبك ؟",
+                            "Are you sure about your order information?",
                             style: GoogleFonts.cairo(
                               textStyle: TextStyle(
                                   color: Colors.white,
                                   fontSize:
                                       MediaQuery.of(context).size.height / 50,
-                                  fontWeight: FontWeight.w600),
-                            ),
-                          ),
-                          content: Text(
-                            "تأكد من معلوماتك وبعدها إضغط ( تم)",
-                            style: GoogleFonts.cairo(
-                              textStyle: TextStyle(
-                                  color: Colors.white,
-                                  fontSize:
-                                      MediaQuery.of(context).size.height / 70,
                                   fontWeight: FontWeight.w600),
                             ),
                           ),
@@ -233,7 +224,7 @@ class _FormReceivingTheOrderState extends State<FormReceivingTheOrder> {
                                     GoToHomePage();
                                   },
                                   child: Text(
-                                    "تم",
+                                    "Done",
                                     style: GoogleFonts.cairo(
                                       textStyle: TextStyle(
                                         color: Colors.amber,
@@ -250,7 +241,7 @@ class _FormReceivingTheOrderState extends State<FormReceivingTheOrder> {
                                     Navigator.of(context).pop();
                                   },
                                   child: Text(
-                                    "رجوع",
+                                    "Back",
                                     style: GoogleFonts.cairo(
                                       textStyle: TextStyle(
                                           color: Colors.amber,

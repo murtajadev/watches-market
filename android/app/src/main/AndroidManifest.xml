@@ -2,7 +2,7 @@
 <!-- Provide required visibility configuration for API level 30 and above -->
 
     <application
-        android:label="whatches_store"
+        android:label="watches_store"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

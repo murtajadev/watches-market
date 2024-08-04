@@ -71,11 +71,11 @@ class _CardItemState extends State<CardItem> {
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: [
                     Text(
-                      "Items Price : ",
+                      "Items Price :",
                       style: TextStyle(color: colorOrange, fontSize: w / 20),
                     ),
                     Text(
-                      "${totalPrice?.toStringAsFixed(2)}",
+                      "\$ ${totalPrice?.toStringAsFixed(2)}",
                       style: TextStyle(color: colorOrange, fontSize: w / 20),
                     ),
                   ],

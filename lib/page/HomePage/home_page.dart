@@ -1,11 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_advanced_drawer/flutter_advanced_drawer.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:whatches_store/page/DrawingMenu/drawingMenuPage.dart';
+import 'package:whatches_store/page/DrawingMenu/drawing_menu_page.dart';
 import 'package:whatches_store/page/HomePage/catalogsWidget/catalog_companys.dart';
 import 'package:whatches_store/page/HomePage/suggestItems/suggestsCard.dart';
-import 'package:whatches_store/page/favoritePage/favorite_page.dart';
-import 'package:whatches_store/page/shoppingBasketPage/shoppingBasketPage.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -49,42 +47,16 @@ class _HomePageState extends State<HomePage> {
                 // there are build the option of drawing menu
               ),
             ),
-            actions: [
-              Text(
-                "Whatches Store",
-                style: GoogleFonts.lobster(
-                  textStyle: TextStyle(
-                      fontSize: 25,
-                      fontWeight: FontWeight.w400,
-                      color: Colors.white.withOpacity(0.99)),
-                ),
+            centerTitle: true,
+            title: Text(
+              "Whatches Store",
+              style: GoogleFonts.lobster(
+                textStyle: TextStyle(
+                    fontSize: 25,
+                    fontWeight: FontWeight.w400,
+                    color: Colors.white.withOpacity(0.99)),
               ),
-              const SizedBox(
-                width: 20,
-              ),
-              IconButton(
-                onPressed: () {
-                  Navigator.of(context).push(MaterialPageRoute(
-                    builder: (context) => const FavoritePage(),
-                  ));
-                },
-                icon: const Icon(
-                  Icons.favorite_border,
-                  color: Colors.white,
-                ),
-              ),
-              IconButton(
-                onPressed: () {
-                  Navigator.of(context).push(MaterialPageRoute(
-                    builder: (context) => const ShoppingBasketPage(),
-                  ));
-                },
-                icon: const Icon(
-                  Icons.shopping_basket_outlined,
-                  color: Colors.white,
-                ),
-              )
-            ],
+            ),
           ),
           backgroundColor: Colors.black,
           body: SingleChildScrollView(
