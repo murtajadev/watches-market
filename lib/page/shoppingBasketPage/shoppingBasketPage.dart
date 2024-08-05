@@ -81,7 +81,7 @@ class _ShoppingBasketPageState extends State<ShoppingBasketPage> {
                       style: TextStyle(color: Colors.white, fontSize: h / 25),
                     ),
                     LottieBuilder.asset(
-                      "asset/basket_is_empty.json",
+                      "asses/basket_is_empty.json",
                       //animate: false,
                       height: h / 3.5,
                     )

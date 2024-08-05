@@ -189,9 +189,9 @@ class _FormReceivingTheOrderState extends State<FormReceivingTheOrder> {
                       color: Colors.amber),
                   child: Center(
                     child: done
-                        ? Lottie.asset("asset/done.json", fit: BoxFit.cover)
+                        ? Lottie.asset("assets/done.json", fit: BoxFit.cover)
                         : orderIsDone
-                            ? Lottie.asset("asset/orderIsDone.json")
+                            ? Lottie.asset("assets/orderIsDone.json")
                             : Text(
                                 "Order",
                                 style: GoogleFonts.oswald(

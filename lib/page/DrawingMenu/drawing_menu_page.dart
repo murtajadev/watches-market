@@ -35,7 +35,7 @@ class _DrawingMenuPageState extends State<DrawingMenuPage> {
                 color: _colorCard,
                 borderRadius: BorderRadius.circular(15),
                 image: const DecorationImage(
-                  image: AssetImage("asset/images/logo_watch.png"),
+                  image: AssetImage("assets/images/logo_watch.png"),
                 ),
               ),
             ),

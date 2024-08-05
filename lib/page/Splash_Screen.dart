@@ -62,7 +62,7 @@ class _SplashScreenState extends State<SplashScreen> {
               body: Stack(
                 children: [
                   const RiveAnimation.asset(
-                    'asset/splash.riv',
+                    'assets/splash.riv',
                     fit: BoxFit.fill,
                   ),
                   Positioned.fill(
