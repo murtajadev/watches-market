@@ -1,10 +1,12 @@
 import 'dart:async';
 
+import 'package:boxicons/boxicons.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:lottie/lottie.dart';
 import 'package:whatches_store/modul/modul.dart';
 import 'package:whatches_store/page/HomePage/botton_navigation_bar.dart';
+import 'package:whatches_store/page/shoppingBasketPage/complete_order/text_field.dart';
 
 class FormReceivingTheOrder extends StatefulWidget {
   const FormReceivingTheOrder({super.key});
@@ -42,7 +44,7 @@ class _FormReceivingTheOrderState extends State<FormReceivingTheOrder> {
       Future.delayed(
         const Duration(seconds: 4),
         () => Navigator.of(context).push(MaterialPageRoute(
-          builder: (context) =>const  BottonNavigationBar(),
+          builder: (context) => const BottonNavigationBar(),
         )),
       );
       basketItems = [];
@@ -62,131 +64,50 @@ class _FormReceivingTheOrderState extends State<FormReceivingTheOrder> {
             mainAxisAlignment: MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              TextFormField(
+              TextFieldWidget(
+                name: "Your Name",
                 controller: nameContorol,
-                style: const TextStyle(color: Colors.white),
-                validator: (value) {
-                  if (value!.isEmpty) {
-                    return "Enter your Name";
-                  }
-                  return null;
-                },
-                decoration: InputDecoration(
-                  enabled: true,
-                  hintText: "your name",
-                  suffixIcon: const Icon(Icons.person),
-                  suffixIconColor: Colors.amber,
-                  hintStyle: const TextStyle(color: Colors.white),
-                  focusedBorder: OutlineInputBorder(
-                      borderSide: BorderSide(color: colorOrange),
-                      borderRadius: BorderRadius.circular(18)),
-                  enabledBorder: const OutlineInputBorder(
-                      borderSide: BorderSide(color: Colors.white)),
-                  border: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(18),
-                  ),
-                ),
+                checkvalidator: true,
+                validatorLabel: "Please Enter Your Name",
+                icon: Icons.person,
               ),
               const SizedBox(
                 height: 30,
               ),
-              TextFormField(
+              TextFieldWidget(
+                name: "Email",
                 controller: emailContorol,
-                style: const TextStyle(color: Colors.white),
-                decoration: InputDecoration(
-                  enabled: true,
-                  hintText: "Email",
-                  suffixIcon: const Icon(Icons.email_outlined),
-                  suffixIconColor: Colors.amber,
-                  hintStyle: const TextStyle(color: Colors.white),
-                  focusedBorder: OutlineInputBorder(
-                      borderSide: BorderSide(color: colorOrange),
-                      borderRadius: BorderRadius.circular(18)),
-                  enabledBorder: const OutlineInputBorder(
-                      borderSide: BorderSide(color: Colors.white)),
-                  border: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(18),
-                  ),
-                ),
+                icon: Icons.email,
+               
               ),
               const SizedBox(
                 height: 30,
               ),
-              TextFormField(
+             TextFieldWidget(
+                name: "Phone Number",
                 controller: numberPhoneContorol,
-                style: const TextStyle(color: Colors.white),
-                keyboardType: TextInputType.number,
-                validator: (value) {
-                  if (value!.isEmpty) {
-                    return "Enter your Number Phone";
-                  }
-                  return null;
-                },
-                decoration: InputDecoration(
-                  enabled: true,
-                  hintText: "Phone Number",
-                  suffixIcon: const Icon(Icons.phone),
-                  suffixIconColor: Colors.amber,
-                  hintStyle: const TextStyle(color: Colors.white),
-                  focusedBorder: OutlineInputBorder(
-                      borderSide: BorderSide(color: colorOrange),
-                      borderRadius: BorderRadius.circular(18)),
-                  enabledBorder: const OutlineInputBorder(
-                      borderSide: BorderSide(color: Colors.white)),
-                  border: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(18),
-                  ),
-                ),
+                checkvalidator: true,
+                validatorLabel: "Please Enter Your Phone Number",
+                icon: Boxicons.bx_phone,
               ),
               const SizedBox(
                 height: 30,
               ),
-              TextFormField(
+               TextFieldWidget(
+                name: "Location",
                 controller: locationControl,
-                style: const TextStyle(color: Colors.white),
-                validator: (value) {
-                  if (value!.isEmpty) {
-                    return "Enter your Location";
-                  }
-                  return null;
-                },
-                decoration: InputDecoration(
-                  enabled: true,
-                  hintText: "Location",
-                  suffixIcon: const Icon(Icons.location_on_outlined),
-                  suffixIconColor: Colors.amber,
-                  hintStyle: const TextStyle(color: Colors.white),
-                  focusedBorder: OutlineInputBorder(
-                      borderSide: BorderSide(color: colorOrange),
-                      borderRadius: BorderRadius.circular(18)),
-                  enabledBorder: const OutlineInputBorder(
-                      borderSide: BorderSide(color: Colors.white)),
-                  border: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(18),
-                  ),
-                ),
+                checkvalidator: true,
+                validatorLabel: "Please Enter Your Location",
+                icon: Icons.location_on_outlined,
               ),
               const SizedBox(
                 height: 30,
               ),
-              TextFormField(
+              TextFieldWidget(
+                name: "Any Note ?",
                 controller: anyNoteController,
-                style: const TextStyle(color: Colors.white),
-                decoration: InputDecoration(
-                  enabled: true,
-                  hintText: "Any Notes !!",
-                  suffixIcon: const Icon(Icons.edit_note_outlined),
-                  suffixIconColor: Colors.amber,
-                  hintStyle: const TextStyle(color: Colors.white),
-                  focusedBorder: OutlineInputBorder(
-                      borderSide: BorderSide(color: colorOrange),
-                      borderRadius: BorderRadius.circular(18)),
-                  enabledBorder: const OutlineInputBorder(
-                      borderSide: BorderSide(color: Colors.white)),
-                  border: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(18),
-                  ),
-                ),
+                
+                icon: Boxicons.bx_notepad,
               ),
               const SizedBox(
                 height: 30,
